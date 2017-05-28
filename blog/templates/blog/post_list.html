@@ -7,16 +7,10 @@
     <h1><a  href="">Mój Blog</a></h1>
   </div>
 
-  <div>
-    <p>opublikowane 28 maja 2017, 15:00</p>
-    <h2><a href="">Pierwszy post ever</a></h2>
-    <p>co tu będzie nie wie nikt, co to będzie, ciemno wszędzie, strach oj strach</p>
+  {% for post in posts %}
   </div>
-
-  <div>
-    <p>opublikowane 1 czerwca 2017, 13:00</p>
-    <h3><a href="">Mniej ważna sprawa</a></h3>
-    <p>blebleb bchhgfbdh djhbgfygf bdhgfyegf</p>
-  </div>
-</body>
-</html>
+    <p>published: {{ post.published_date }}</p>
+    <h1><a href="">{{ post.title }}</a></h1>
+    <p>{{ post.text|linebreaksbr }}</p>
+</div>
+{% endfor %}
