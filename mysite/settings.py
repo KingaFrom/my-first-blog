@@ -25,7 +25,7 @@ SECRET_KEY = 'k#e17b(g97^g5!ohf^55-0en4^n+ss+0%&(l9v85foh6m4kyb^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["kingafrom.pythonanywhere.com"]
 
 
 # Application definition
